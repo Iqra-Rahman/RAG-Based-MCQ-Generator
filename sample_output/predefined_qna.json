@@ -1,0 +1,32 @@
+[
+    {
+        "question": "What is the primary purpose of the Transformer model in machine learning?",
+        "answer": "The Transformer model is designed to process sequential data, such as text, by leveraging mechanisms like self-attention and positional encoding to efficiently model long-range dependencies without relying on recurrence.",
+        "source": "Predefined",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "How does self-attention work in the context of Transformer models?",
+        "answer": "Self-attention computes the importance of each word in a sequence relative to every other word. It does this by generating query, key, and value vectors for each word and using scaled dot-product attention to calculate weighted representations of the sequence.",
+        "source": "Predefined",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "Why is positional encoding necessary in Transformer models?",
+        "answer": "Positional encoding is necessary because Transformers do not inherently understand the order of words in a sequence. It adds information about the position of words to the input embeddings, allowing the model to consider the order of elements in the sequence.",
+        "source": "Predefined",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "What is the main purpose of the Adam Optimizer in training Transformer models?",
+        "answer": "The Adam Optimizer is used to efficiently update model weights by combining the benefits of momentum and adaptive learning rates, helping the model converge faster during training.",
+        "source": "Predefined",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "How does dropout regularization prevent overfitting in transformer models?",
+        "answer": "Dropout regularization prevents overfitting by randomly setting a fraction of neurons to zero during training, which forces the model to learn more robust features and reduces reliance on specific connections.",
+        "source": "Predefined",
+        "difficulty": "Easy"
+    }
+]

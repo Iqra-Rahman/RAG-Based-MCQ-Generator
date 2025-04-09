@@ -1,0 +1,106 @@
+[
+    {
+        "question": "In the context of neural machine translation, what is the primary advantage of using multi-head attention in the Transformer architecture?",
+        "options": {
+            "A": "It enables the model to focus on different parts of the input sequence simultaneously.",
+            "B": "It reduces the overall computational complexity of the attention mechanism.",
+            "C": "It eliminates the need for positional encoding in sequence modeling.",
+            "D": "It restricts the model's ability to process long-range dependencies."
+        },
+        "correct_answer": "A",
+        "explanation": "Multi-head attention allows the model to attend to different subspaces of the input sequence, enabling a richer representation and improving the model's ability to capture complex dependencies.",
+        "source": "PDF",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "In scaled dot-product attention, why is the dot product of query and key vectors scaled by the square root of their dimensionality?",
+        "options": {
+            "A": "To prevent the softmax function from producing overly sharp probability distributions.",
+            "B": "To normalize the input values for better numerical stability.",
+            "C": "To ensure that the attention weights are biased towards smaller values.",
+            "D": "To enhance the model\u2019s ability to handle longer input sequences."
+        },
+        "correct_answer": "A",
+        "explanation": "Scaling by the square root of the dimensionality prevents the dot product values from becoming too large, which could result in extremely small gradients and sharp probability distributions from the softmax function.",
+        "source": "PDF",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "What is the purpose of employing label smoothing with a value of \u03f5ls = 0.1 in training machine translation models?",
+        "options": {
+            "A": "To improve perplexity by making the model more certain about predictions",
+            "B": "To reduce overfitting by encouraging the model to be less confident in its predictions",
+            "C": "To optimize the BLEU score by penalizing incorrect translations",
+            "D": "To increase the model's training speed by simplifying the loss function"
+        },
+        "correct_answer": "B",
+        "explanation": "Label smoothing reduces overfitting by making the model less confident about its predictions, which can hurt perplexity but improves metrics like accuracy and BLEU score.",
+        "source": "PDF",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "In the context of machine translation, how does the big Transformer model impact performance compared to smaller models?",
+        "options": {
+            "A": "It requires label smoothing to achieve acceptable perplexity levels",
+            "B": "It is specifically optimized for tasks like English-to-German translation in WMT datasets",
+            "C": "It leverages more parameters to improve BLEU score and translation accuracy",
+            "D": "It eliminates the need for self-attention mechanisms due to its size"
+        },
+        "correct_answer": "C",
+        "explanation": "The big Transformer model uses a larger number of parameters, which enhances its ability to improve accuracy and BLEU score for tasks like English-to-German translation.",
+        "source": "PDF",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "What is the primary purpose of the third sub-layer introduced in each decoder layer of the Transformer architecture?",
+        "options": {
+            "A": "To perform scaled dot-product attention on the encoder outputs",
+            "B": "To facilitate residual connections between layers",
+            "C": "To increase the embedding dimension to dmodel = 512",
+            "D": "To perform convolutional operation for feature extraction"
+        },
+        "correct_answer": "A",
+        "explanation": "The third sub-layer in each decoder layer is responsible for performing multi-head attention over the encoder outputs, which enables the decoder to focus on relevant parts of the input sequence.",
+        "source": "PDF",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "What is the dimensionality of the outputs produced by all sub-layers and embedding layers in the Transformer model?",
+        "options": {
+            "A": "256",
+            "B": "1024",
+            "C": "512",
+            "D": "128"
+        },
+        "correct_answer": "C",
+        "explanation": "The Transformer model specifies that all sub-layers and embedding layers produce outputs with a fixed dimensionality of dmodel = 512 to maintain consistency across the architecture.",
+        "source": "PDF",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "Why is the dot product scaled by 1/\u221adk in the scaled dot-product attention mechanism?",
+        "options": {
+            "A": "To prevent the softmax function from saturating and having extremely small gradients",
+            "B": "To increase the magnitude of the dot products for better attention results",
+            "C": "To ensure that the dot products are normalized to a fixed scale",
+            "D": "To eliminate the need for softmax in the attention mechanism"
+        },
+        "correct_answer": "A",
+        "explanation": "Scaling the dot product by 1/\u221adk ensures that the inputs to the softmax function remain within a range where gradients are not extremely small, thus avoiding issues during backpropagation.",
+        "source": "PDF",
+        "difficulty": "Hard"
+    },
+    {
+        "question": "What is the primary difference between single-head attention and multi-head attention in the Transformer model?",
+        "options": {
+            "A": "Multi-head attention divides the input into multiple subspaces to capture diverse relationships, while single-head attention processes the input as a single space.",
+            "B": "Single-head attention uses scaled dot-product attention, while multi-head attention does not use scaling.",
+            "C": "Multi-head attention applies convolutional filters, whereas single-head attention does not.",
+            "D": "Single-head attention is used for encoder-decoder connections, while multi-head attention is used only for self-attention."
+        },
+        "correct_answer": "A",
+        "explanation": "Multi-head attention splits the input into multiple subspaces, allowing it to learn diverse features and relationships, which improves the model's ability to capture complex patterns compared to single-head attention.",
+        "source": "PDF",
+        "difficulty": "Hard"
+    }
+]
